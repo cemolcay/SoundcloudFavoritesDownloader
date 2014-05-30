@@ -1,0 +1,54 @@
+#like {
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    border : 1px solid #ddd;
+    height: 120px;
+}
+
+#like:hover {
+    background-color: #ddd;
+}
+
+#img {
+    height: 100%;
+}
+
+
+#imgDiv {
+    float: left;
+    height: 
+}
+
+
+#infoDiv {
+    margin: 0px;
+}
+
+
+#app {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+    font : 20px helveticaneue-light;   
+}
+
+#app:hover {
+    background-color: #ddd;
+}
+
+
+
+h1 {
+    font : 16px helveticaneue-light;
+    margin: 0px;
+}
+
+h2 {
+    font : 16px helveticaneue-thin;
+    margin: 0px;
+}
+
+.button {
+    margin: 0px;
+}
