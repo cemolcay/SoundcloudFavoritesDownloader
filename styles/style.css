@@ -17,12 +17,11 @@
 
 #imgDiv {
     float: left;
-    height: 
 }
 
 
 #infoDiv {
-    margin: 0px;
+    margin: 0px 0px 0px 110px;
 }
 
 
@@ -32,12 +31,6 @@
     padding: 10px;
     font : 20px helveticaneue-light;   
 }
-
-#app:hover {
-    background-color: #ddd;
-}
-
-
 
 h1 {
     font : 16px helveticaneue-light;

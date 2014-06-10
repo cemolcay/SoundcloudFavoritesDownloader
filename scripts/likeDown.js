@@ -8,13 +8,27 @@
         render : function () {
             $("#app").html (_.template ($("#app-login").html(), {}));
             
+
             $("#btnLogin").click (function (){
                 SC.initialize ({client_id : "5632af4389c6f766ffd1f46b38160853"});
-                $.get ("http://api.soundcloud.com/resolve.json?url=https://soundcloud.com/" +
+                
+                var url = "http://api.soundcloud.com/resolve.json?url=https://soundcloud.com/" +
                        $("#txtUserName").val()+
-                       "&client_id=5632af4389c6f766ffd1f46b38160853", function (data) {
-                           app.navigate ("user/" + data.id, {trigger : true});
+                       "&client_id=5632af4389c6f766ffd1f46b38160853";
+                
+                $.ajax ({
+                    type : "GET",
+                    dataType : "jsonp",
+                    url : url
+                }).done (function (data) {
+                    app.navigate ("user/" + data.id, {trigger : true});
                 });
+
+//                $.get ("http://api.soundcloud.com/resolve.json?url=https://soundcloud.com/" +
+//                       $("#txtUserName").val()+
+//                       "&client_id=5632af4389c6f766ffd1f46b38160853", function (data) {
+//                           app.navigate ("user/" + data.id, {trigger : true});
+//                });
             });
         }   
     });
