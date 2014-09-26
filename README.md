@@ -14,3 +14,7 @@ underscore.js
 sc.js
 
 and some ugly programmer stylesheet
+
+Live Demo
+---------
+http://cemolcay.github.io/scdown.html
